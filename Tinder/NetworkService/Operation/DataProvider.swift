@@ -9,7 +9,6 @@
 import Foundation
 
 class DataProvider {
-    //первый запрос
     static func getUsers(success: @escaping (_ usersArray: [UserModel])-> Void, failure: @escaping (_ error: String)-> Void) {
         let operation = WorksheetsOperation(success: success, failure: failure)
         OperationManager.addOperation(op: operation, cancellingQueu: true)

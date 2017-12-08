@@ -11,7 +11,7 @@ import Foundation
 
 struct constant {
     struct API_data {
-        static var token = "82161791-3a1f-4744-929f-16da98867670"
+        static var token = "045c6399-338b-444e-a304-d8cefab4f0d4"
         static var base_url = "https://api.gotinder.com/recs/core"
     }
 }

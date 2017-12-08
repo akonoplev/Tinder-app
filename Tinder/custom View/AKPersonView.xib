@@ -13,57 +13,71 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonView" customModule="Tinder" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="jRq-jf-RMe" id="mwp-HG-F0V"/>
+                <outlet property="personView" destination="3MC-2K-wtX" id="ZXe-H1-n6b"/>
                 <outlet property="tableView" destination="nqn-Rj-syU" id="gnO-2V-g2v"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="3MC-2K-wtX">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="455"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jRq-jf-RMe">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="405"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jRq-jf-RMe">
+                    <rect key="frame" x="35" y="70" width="305" height="400"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0kW-PC-dij">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0kW-PC-dij">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEv-7E-z47">
-                    <rect key="frame" x="277.5" y="405" width="60" height="30"/>
-                    <state key="normal" title="Не Лойс"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEv-7E-z47" customClass="DislikeButton" customModule="Tinder" customModuleProvider="target">
+                    <rect key="frame" x="277.5" y="490" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Jlh-ah-qac"/>
+                        <constraint firstAttribute="width" constant="60" id="dcI-PD-Xn2"/>
+                    </constraints>
+                    <state key="normal" title=" Нет"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MZ-xj-Opo">
-                    <rect key="frame" x="49.5" y="405" width="37" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MZ-xj-Opo" customClass="LikeButton" customModule="Tinder" customModuleProvider="target">
+                    <rect key="frame" x="38" y="490" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="muH-a7-Rfr"/>
+                        <constraint firstAttribute="height" constant="60" id="qYR-B7-VXN"/>
+                    </constraints>
                     <state key="normal" title="Лойс"/>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nqn-Rj-syU">
-                    <rect key="frame" x="0.0" y="255" width="375" height="150"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nqn-Rj-syU">
+                    <rect key="frame" x="35" y="320" width="305" height="150"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="d2g-SN-NTa"/>
                     </constraints>
+                    <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" red="0.87058823529411766" green="0.83136845685405691" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="jRq-jf-RMe" firstAttribute="leading" secondItem="GQT-UQ-tx5" secondAttribute="leading" id="8yJ-Ol-pyR"/>
-                <constraint firstItem="GQT-UQ-tx5" firstAttribute="trailing" secondItem="nqn-Rj-syU" secondAttribute="trailing" id="T8i-ed-fp9"/>
+                <constraint firstItem="jRq-jf-RMe" firstAttribute="leading" secondItem="GQT-UQ-tx5" secondAttribute="leading" constant="35" id="8yJ-Ol-pyR"/>
+                <constraint firstItem="GQT-UQ-tx5" firstAttribute="trailing" secondItem="nqn-Rj-syU" secondAttribute="trailing" constant="35" id="T8i-ed-fp9"/>
                 <constraint firstItem="jEv-7E-z47" firstAttribute="centerX" secondItem="3MC-2K-wtX" secondAttribute="centerX" constant="120" id="VYI-uh-Bat"/>
-                <constraint firstItem="nqn-Rj-syU" firstAttribute="leading" secondItem="GQT-UQ-tx5" secondAttribute="leading" id="bvS-iu-uaQ"/>
-                <constraint firstItem="jEv-7E-z47" firstAttribute="top" secondItem="jRq-jf-RMe" secondAttribute="bottom" id="cFb-eN-ehQ"/>
-                <constraint firstItem="jEv-7E-z47" firstAttribute="top" secondItem="nqn-Rj-syU" secondAttribute="bottom" id="dwC-CY-GzL"/>
+                <constraint firstItem="nqn-Rj-syU" firstAttribute="leading" secondItem="GQT-UQ-tx5" secondAttribute="leading" constant="35" id="bvS-iu-uaQ"/>
                 <constraint firstItem="GQT-UQ-tx5" firstAttribute="bottom" secondItem="jEv-7E-z47" secondAttribute="bottom" constant="20" id="hzR-s8-2OG"/>
-                <constraint firstItem="jRq-jf-RMe" firstAttribute="top" secondItem="GQT-UQ-tx5" secondAttribute="top" id="pG5-Fk-281"/>
-                <constraint firstItem="GQT-UQ-tx5" firstAttribute="trailing" secondItem="jRq-jf-RMe" secondAttribute="trailing" id="ukW-Md-GVw"/>
+                <constraint firstItem="jRq-jf-RMe" firstAttribute="top" secondItem="GQT-UQ-tx5" secondAttribute="top" constant="50" id="pG5-Fk-281"/>
+                <constraint firstItem="jRq-jf-RMe" firstAttribute="bottom" secondItem="nqn-Rj-syU" secondAttribute="bottom" id="qqK-dc-UNK"/>
+                <constraint firstItem="GQT-UQ-tx5" firstAttribute="trailing" secondItem="jRq-jf-RMe" secondAttribute="trailing" constant="35" id="ukW-Md-GVw"/>
+                <constraint firstItem="jEv-7E-z47" firstAttribute="top" secondItem="jRq-jf-RMe" secondAttribute="bottom" constant="20" id="vTi-wR-PSN"/>
                 <constraint firstItem="GQT-UQ-tx5" firstAttribute="bottom" secondItem="1MZ-xj-Opo" secondAttribute="bottom" constant="20" id="xNL-TG-HYl"/>
                 <constraint firstItem="1MZ-xj-Opo" firstAttribute="centerX" secondItem="3MC-2K-wtX" secondAttribute="centerX" constant="-120" id="xmO-M0-ppK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="GQT-UQ-tx5"/>
-            <point key="canvasLocation" x="-29" y="255"/>
+            <point key="canvasLocation" x="-29.5" y="312"/>
         </view>
     </objects>
 </document>
