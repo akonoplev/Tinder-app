@@ -20,7 +20,6 @@ class PersonView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
-       
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -83,6 +82,6 @@ extension PersonView: UICollectionViewDelegateFlowLayout {
         print(UIScreen.main.bounds.width)
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
-    
 }
+
 

@@ -17,15 +17,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJV-98-0ch">
+                                <rect key="frame" x="57.5" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="C8M-Ht-QL0"/>
+                                    <constraint firstAttribute="width" constant="60" id="UgN-eg-H0K"/>
+                                </constraints>
+                                <state key="normal" title="Луйс" image="like.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkm-zC-3Oy">
+                                <rect key="frame" x="258" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2lN-xs-WE4"/>
+                                    <constraint firstAttribute="width" constant="60" id="biA-gN-4do"/>
+                                </constraints>
+                                <state key="normal" title="дизЛуйс" image="dislike.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKE-Bf-G9P" customClass="SwipableCardView" customModule="Tinder" customModuleProvider="target">
+                                <rect key="frame" x="65" y="120" width="245" height="317"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IJV-98-0ch" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="HYL-cx-ZpH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XKE-Bf-G9P" secondAttribute="trailing" constant="65" id="II2-Im-6sG"/>
+                            <constraint firstItem="XKE-Bf-G9P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="TQN-BP-hWg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wkm-zC-3Oy" secondAttribute="bottom" constant="20" id="Tgj-iV-ptD"/>
+                            <constraint firstItem="XKE-Bf-G9P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="UQO-HY-Fmh"/>
+                            <constraint firstItem="wkm-zC-3Oy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="uhS-bL-HNa"/>
+                            <constraint firstItem="IJV-98-0ch" firstAttribute="top" secondItem="XKE-Bf-G9P" secondAttribute="bottom" constant="150" id="vXA-vU-KUV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IJV-98-0ch" secondAttribute="bottom" constant="20" id="x6p-Om-NPV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="selfView" destination="8bC-Xf-vdC" id="m0p-vz-wHQ"/>
+                        <outlet property="cardView" destination="XKE-Bf-G9P" id="Lw1-dw-oiw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="167" y="-59"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dislike.png" width="128" height="128"/>
+        <image name="like.png" width="128" height="128"/>
+    </resources>
 </document>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02293C186C280EC0903BA82E8D5F50A4"
-               BuildableName = "Pods_Tinder.framework"
-               BlueprintName = "Pods-Tinder"
+               BlueprintIdentifier = "7257D911AB2DBB250B5F626B929C54E1"
+               BuildableName = "SocketRocket.framework"
+               BlueprintName = "SocketRocket"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "02293C186C280EC0903BA82E8D5F50A4"
-            BuildableName = "Pods_Tinder.framework"
-            BlueprintName = "Pods-Tinder"
+            BlueprintIdentifier = "7257D911AB2DBB250B5F626B929C54E1"
+            BuildableName = "SocketRocket.framework"
+            BlueprintName = "SocketRocket"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

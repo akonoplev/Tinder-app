@@ -17,8 +17,8 @@ class LikeButton: UIButton {
     
     private func setStyle() {
         layer.cornerRadius = 30
-        layer.borderWidth = 2
-        layer.borderColor = UIColor.white.cgColor
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.green.cgColor
         backgroundColor = UIColor.green
         setTitleColor(UIColor.white, for: UIControlState.normal)
     }
@@ -33,8 +33,8 @@ class DislikeButton: UIButton {
     
     private func setStyle() {
         layer.cornerRadius = 30
-        layer.borderWidth = 2
-        layer.borderColor = UIColor.white.cgColor
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.red.cgColor
         backgroundColor = UIColor.red
         setTitleColor(UIColor.white, for: UIControlState.normal)
     }

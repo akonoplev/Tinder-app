@@ -5,5 +5,6 @@ target 'Tinder' do
 
     pod 'SDWebImage'
 	pod 'SwiftyJSON'
+    pod 'SocketRocket'
 
 end

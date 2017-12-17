@@ -22,6 +22,12 @@
 		9A1441AC1FD599E200A286F6 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1441AB1FD599E200A286F6 /* PersonView.swift */; };
 		9A1CEAA61FD6282B0002ABFD /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1CEAA51FD6282B0002ABFD /* PersonViewModel.swift */; };
 		9A58B5351FDADBE3003ECDDB /* ButtonsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A58B5341FDADBE3003ECDDB /* ButtonsStyle.swift */; };
+		9A7C53A21FE0AC93008D06D3 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7C53A11FE0AC93008D06D3 /* CardView.xib */; };
+		9A7C53A41FE0C98F008D06D3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C53A31FE0C98E008D06D3 /* CardView.swift */; };
+		9A7C53A61FE15A9E008D06D3 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C53A51FE15A9E008D06D3 /* CardViewModel.swift */; };
+		9A7E4BCB1FE0334800AC0D9E /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A7E4BCA1FE0334800AC0D9E /* like.png */; };
+		9A7E4BCD1FE033E600AC0D9E /* dislike.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A7E4BCC1FE033E600AC0D9E /* dislike.png */; };
+		9A7E4BD01FE0368900AC0D9E /* SwipableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E4BCF1FE0368900AC0D9E /* SwipableCardView.swift */; };
 		9A96CE721FD44346002DD470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96CE711FD44346002DD470 /* AppDelegate.swift */; };
 		9A96CE771FD44346002DD470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A96CE751FD44346002DD470 /* Main.storyboard */; };
 		9A96CE791FD44346002DD470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A96CE781FD44346002DD470 /* Assets.xcassets */; };
@@ -33,6 +39,7 @@
 		9A96CE961FD4577F002DD470 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96CE951FD4577F002DD470 /* DataProvider.swift */; };
 		9A96CE991FD45814002DD470 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96CE981FD45814002DD470 /* UserModel.swift */; };
 		9A96CE9C1FD459FC002DD470 /* UserFabrique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96CE9B1FD459FC002DD470 /* UserFabrique.swift */; };
+		9AF3AD691FE6DDF4002D78A5 /* RealTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3AD681FE6DDF4002D78A5 /* RealTimeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +58,12 @@
 		9A1441AB1FD599E200A286F6 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		9A1CEAA51FD6282B0002ABFD /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 		9A58B5341FDADBE3003ECDDB /* ButtonsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsStyle.swift; sourceTree = "<group>"; };
+		9A7C53A11FE0AC93008D06D3 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		9A7C53A31FE0C98E008D06D3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9A7C53A51FE15A9E008D06D3 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		9A7E4BCA1FE0334800AC0D9E /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		9A7E4BCC1FE033E600AC0D9E /* dislike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dislike.png; sourceTree = "<group>"; };
+		9A7E4BCF1FE0368900AC0D9E /* SwipableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipableCardView.swift; sourceTree = "<group>"; };
 		9A96CE6E1FD44346002DD470 /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A96CE711FD44346002DD470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A96CE761FD44346002DD470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +77,7 @@
 		9A96CE951FD4577F002DD470 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		9A96CE981FD45814002DD470 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		9A96CE9B1FD459FC002DD470 /* UserFabrique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFabrique.swift; sourceTree = "<group>"; };
+		9AF3AD681FE6DDF4002D78A5 /* RealTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeManager.swift; sourceTree = "<group>"; };
 		D5D13D4BCED2FB440BB4EF95 /* Pods-Tinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tinder/Pods-Tinder.debug.xcconfig"; sourceTree = "<group>"; };
 		F6352473EBB18232E9E34B58 /* Pods_Tinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,12 +148,39 @@
 			path = PhotosCell;
 			sourceTree = "<group>";
 		};
-		9A58B5331FDADBB6003ECDDB /* custom Styles */ = {
+		9A58B5331FDADBB6003ECDDB /* Custom Styles */ = {
 			isa = PBXGroup;
 			children = (
 				9A58B5341FDADBE3003ECDDB /* ButtonsStyle.swift */,
 			);
-			path = "custom Styles";
+			path = "Custom Styles";
+			sourceTree = "<group>";
+		};
+		9A7C53A71FE191C7008D06D3 /* Reject */ = {
+			isa = PBXGroup;
+			children = (
+				9A1CEAA51FD6282B0002ABFD /* PersonViewModel.swift */,
+				9A1441AB1FD599E200A286F6 /* PersonView.swift */,
+				9A96CE891FD4482D002DD470 /* AKPersonView.xib */,
+			);
+			path = Reject;
+			sourceTree = "<group>";
+		};
+		9A7E4BC91FE032ED00AC0D9E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9A7E4BCC1FE033E600AC0D9E /* dislike.png */,
+				9A7E4BCA1FE0334800AC0D9E /* like.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9A7E4BCE1FE0362D00AC0D9E /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9A7E4BCF1FE0368900AC0D9E /* SwipableCardView.swift */,
+			);
+			path = "Custom Classes";
 			sourceTree = "<group>";
 		};
 		9A96CE651FD44346002DD470 = {
@@ -164,7 +205,10 @@
 			isa = PBXGroup;
 			children = (
 				9A96CE751FD44346002DD470 /* Main.storyboard */,
-				9A58B5331FDADBB6003ECDDB /* custom Styles */,
+				9AF3AD6A1FE6DDF7002D78A5 /* RealTimeManager */,
+				9A7E4BCE1FE0362D00AC0D9E /* Custom Classes */,
+				9A58B5331FDADBB6003ECDDB /* Custom Styles */,
+				9A7E4BC91FE032ED00AC0D9E /* Images */,
 				9A96CE971FD457DD002DD470 /* Model */,
 				9A96CE8B1FD44DD0002DD470 /* NetworkService */,
 				9A96CE9A1FD459E3002DD470 /* Fabrique */,
@@ -199,11 +243,10 @@
 		9A96CE881FD447F7002DD470 /* custom View */ = {
 			isa = PBXGroup;
 			children = (
+				9AF3AD6C1FE6F734002D78A5 /* CardView */,
+				9A7C53A71FE191C7008D06D3 /* Reject */,
 				9A01587A1FDAAD6F0041C728 /* PhotosCell */,
 				9A0158711FDAA2BD0041C728 /* PropertiesCell */,
-				9A96CE891FD4482D002DD470 /* AKPersonView.xib */,
-				9A1441AB1FD599E200A286F6 /* PersonView.swift */,
-				9A1CEAA51FD6282B0002ABFD /* PersonViewModel.swift */,
 			);
 			path = "custom View";
 			sourceTree = "<group>";
@@ -242,6 +285,24 @@
 				9A96CE9B1FD459FC002DD470 /* UserFabrique.swift */,
 			);
 			path = Fabrique;
+			sourceTree = "<group>";
+		};
+		9AF3AD6A1FE6DDF7002D78A5 /* RealTimeManager */ = {
+			isa = PBXGroup;
+			children = (
+				9AF3AD681FE6DDF4002D78A5 /* RealTimeManager.swift */,
+			);
+			path = RealTimeManager;
+			sourceTree = "<group>";
+		};
+		9AF3AD6C1FE6F734002D78A5 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				9A7C53A31FE0C98E008D06D3 /* CardView.swift */,
+				9A7C53A51FE15A9E008D06D3 /* CardViewModel.swift */,
+				9A7C53A11FE0AC93008D06D3 /* CardView.xib */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +370,10 @@
 				9A96CE7C1FD44346002DD470 /* LaunchScreen.storyboard in Resources */,
 				9A0158751FDAA2F40041C728 /* PropertiesCell.xib in Resources */,
 				9A96CE8A1FD4482D002DD470 /* AKPersonView.xib in Resources */,
+				9A7E4BCD1FE033E600AC0D9E /* dislike.png in Resources */,
 				9A96CE791FD44346002DD470 /* Assets.xcassets in Resources */,
+				9A7E4BCB1FE0334800AC0D9E /* like.png in Resources */,
+				9A7C53A21FE0AC93008D06D3 /* CardView.xib in Resources */,
 				9A01587E1FDAADA10041C728 /* PhotosCell.xib in Resources */,
 				9A96CE771FD44346002DD470 /* Main.storyboard in Resources */,
 			);
@@ -341,11 +405,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tinder/Pods-Tinder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,11 +446,14 @@
 			files = (
 				9A96CE961FD4577F002DD470 /* DataProvider.swift in Sources */,
 				9A1441A81FD57E1800A286F6 /* MainViewController.swift in Sources */,
+				9A7E4BD01FE0368900AC0D9E /* SwipableCardView.swift in Sources */,
 				9A1441A21FD57CE400A286F6 /* ViewModel.swift in Sources */,
 				9A58B5351FDADBE3003ECDDB /* ButtonsStyle.swift in Sources */,
 				9A96CE991FD45814002DD470 /* UserModel.swift in Sources */,
+				9A7C53A61FE15A9E008D06D3 /* CardViewModel.swift in Sources */,
 				9A14419F1FD5680300A286F6 /* OperationManager.swift in Sources */,
 				9A96CE9C1FD459FC002DD470 /* UserFabrique.swift in Sources */,
+				9A7C53A41FE0C98F008D06D3 /* CardView.swift in Sources */,
 				9A14419D1FD469F600A286F6 /* WorksheetsOperation.swift in Sources */,
 				9A0158801FDAADC30041C728 /* PhotosCellViewModel.swift in Sources */,
 				9A0158741FDAA2F40041C728 /* PropertiesCell.swift in Sources */,
@@ -394,6 +463,7 @@
 				9A96CE901FD44EBA002DD470 /* API_Wrapper.swift in Sources */,
 				9A1441AC1FD599E200A286F6 /* PersonView.swift in Sources */,
 				9A96CE8E1FD44E3D002DD470 /* API_conf.swift in Sources */,
+				9AF3AD691FE6DDF4002D78A5 /* RealTimeManager.swift in Sources */,
 				9A0158771FDAA6EA0041C728 /* PropertiesViewModel.swift in Sources */,
 				9A1441AA1FD5801800A286F6 /* MainViewModel.swift in Sources */,
 				9A1CEAA61FD6282B0002ABFD /* PersonViewModel.swift in Sources */,

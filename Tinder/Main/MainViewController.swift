@@ -14,23 +14,44 @@ class MainViewController: UIViewController {
         didSet {
             viewModel.updatePeople {
                 DispatchQueue.main.async {
-                    self.addWorksheetView()
-                    self.personView.reloadInputViews()
+                   self.adding()
                 }
             }
         }
     }
     
-    var personView: PersonView!
-    @IBOutlet var selfView: UIView!
+    //var personView: PersonView!
+    @IBOutlet weak var cardView: SwipableCardView!
+    
+    let cardNib = UINib(nibName: "CardView", bundle: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func adding() {
+        cardView.registerNib(nib: cardNib)
+        cardView.delegate = self
+        cardView.dataSource = self
+    }
+}
+
+extension MainViewController: SwipeCardViewDelegate, SwipableCardViewDataSource {
+    func swiped(direction: swipeDirections, index: Int) {
+
+    }
+    
+    func view(view: UIView, atIndex index: Int)
+    {
+        let viewModel = CardViewModel(user: self.viewModel.peopleArray[index])
+        (view as! CardView).cardViewModel = viewModel
         
     }
     
-    func addWorksheetView() {
-        personView = PersonView(user: viewModel.peopleArray[0], frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-        selfView.addSubview(personView)
+    func numberOfView() -> Int {
+        return self.viewModel.peopleArray.count
     }
 }
+
+
+
